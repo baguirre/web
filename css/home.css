@@ -1,0 +1,1114 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  color: #fff;
+}
+
+body h1, h2, h3, h4, h5, h6, p {
+  text-shadow: none;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.white.arrow {
+  background: url('/img/arrow-white.png');
+  background-repeat: no-repeat !important;
+}
+
+.signature {
+  background: url('/img/logo-signatures.png');
+  background-repeat: no-repeat;
+  width: 45px !important;
+  height: 45px !important;
+  background-size: 240px auto;
+  display: inline-block;
+}
+
+.signature.violet {
+  background-position: -45px 0px;
+}
+
+.signature.lightblue {
+  background-position: -96px 0px;
+}
+
+.signature.blue {
+  background-position: -148px 0px;
+}
+
+.signature.black {
+  background-position: -199px 0px;
+}
+
+.centered-box {
+  width: 66%;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.centered-box.violet {
+  background-color: rgb(97,19,151);
+}
+
+.violet-text {
+  color: rgb(97,19,151) !important;
+}
+
+input.transparent {
+  background-color: rgba(0,0,0,0) !important;
+  width: 80%;
+
+  outline: none;
+  border: none !important;
+  box-shadow: none !important;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -moz-transition: none;
+  -webkit-transition: none;
+}
+
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+input:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+
+::-webkit-input-placeholder { /* WebKit browsers */
+  color: #fff;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: #fff;
+  opacity: 1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: #fff;
+  opacity: 1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+  color: #fff;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+/* NAVBAR
+-------------------------------------------------- */
+
+.navbar {
+  position: absolute;
+  width: 100%;
+}
+
+.navbar-nav a {
+  font-weight: bold;
+  font-size: 1.3em;
+  color: #fff;
+}
+
+.navbar .navbar-nav {
+  width: 100%;
+}
+
+.navbar-brand {
+  padding: 0;
+}
+
+.navbar li.right-corner {
+  float: right !important;
+}
+
+.navbar .login-icon {
+  display: inline-block;
+  vertical-align: middle;
+  background-image: url('/img/login-icon.png');
+  background-repeat: no-repeat;
+}
+
+.navbar .register-icon {
+  display: inline-block;
+  vertical-align: middle;
+  background-image: url('/img/edge-icon.png');
+  background-repeat: no-repeat;
+}
+
+/* CAROUSEL
+-------------------------------------------------- */
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  background-color: #777;
+}
+
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+}
+
+.carousel-inner > .item {
+  background-color: rgb(73,147,150);
+}
+
+.carousel .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(91, 182, 185, .81);
+  z-index: 1;
+}
+
+.carousel h1 {
+  margin: 0;
+}
+
+.carousel .carousel-caption {
+  text-align: left;
+}
+
+.carousel .carousel-control {
+  z-index: 2;
+  display: none;
+}
+
+.carousel-indicators li {
+  background-color: #fff;
+  border: none;
+}
+
+.carousel-indicators li.active {
+  background-color: rgb(97,19,151);
+}
+
+/* WOOD DIV
+-------------------------------------------------- */
+
+.wood {
+  position: relative;
+  background-image: url('/img/wood.png');
+}
+
+/* FEATURES DIV
+-------------------------------------------------- */
+
+.features {
+  position: relative;
+  padding: 0;
+  background-image: url('/img/features.png');
+  background-repeat: no-repeat;
+  background-color: rgb(17,32,119);
+}
+
+.features h1 {
+  margin: 0;
+}
+
+.features .content {
+  position: absolute;
+  left: 17%;
+  top: 10%;
+  z-index: 1;
+}
+
+.features .content h3 {
+  margin: 0;
+}
+
+.features .all-features {
+  z-index: 1;
+  background: transparent;
+  border: 3px solid;
+}
+
+/* FOOTER
+-------------------------------------------------- */
+.footer {
+  position: relative;
+}
+
+.footer .email-input {
+  z-index: 1;
+}
+
+.disclaimer {
+  position: relative;
+  background-color: rgba(0,0,0,.5);
+}
+
+.info {
+  position: relative;
+  background-color: rgb(0,0,0);
+}
+
+.info .items {
+  color: rgb(51,51,51);
+}
+
+@media (max-width: 768px) {
+  .centered-box.violet {
+    height: 20px;
+  }
+
+  .centered-box.violet h3 {
+    margin-top: 5px;
+    margin-left: 10px;
+    font-size: 1.1em;
+  }
+
+  .centered-box.all-features {
+    height: 20px;
+  }
+
+  .centered-box.all-features h3 {
+    margin-top: 5px;
+    margin-left: 10px;
+    font-size: 1.2em;
+  }
+
+  .arrow {
+    width: 15px;
+    height: 6px;
+    margin-right: 7px;
+  }
+
+  .violet .arrow {
+    margin-top: 7px;
+  }
+
+  .all-features .arrow {
+    margin-top: 7px;
+  }
+
+  .arrow.white {
+    background-size: 15px 6px;
+  }
+
+    /* NAVBAR
+  -------------------------------------------------- */
+
+  .navbar .logo img {
+    width: 46px;
+    height: 45px;
+  }
+
+  .navbar .navbar-collapse {
+    padding-left: 46px;
+  }
+
+  .navbar-collapse .navbar-nav {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .navbar-collapse .navbar-nav li {
+    padding-right: 12px;
+  }
+
+  .navbar {
+    min-height: 46px;
+    height: 45px;
+    /*background: transparent;*/
+  }
+
+  .navbar-nav a {
+    /*background: transparent !important;*/
+    font-size: 1.3em;
+    font-weight: normal;
+  }
+
+  .navbar-inner {
+    /*background: transparent;*/
+  }
+
+  .navbar li.right-corner {
+    padding-left: 5px;
+    margin-top: 0px;
+  }
+
+  .navbar .login-icon {
+    width: 18px;
+    height: 19px;
+    margin-left: 5px;
+    background-position-y: -3px;
+    background-size: 18px 19px;
+  }
+
+  .navbar .register-icon {
+    width: 20px;
+    height: 18px;
+    margin-left: 5px;
+    background-position-y: 0px;
+    background-size: 20px 15px;
+  }
+
+    /* CAROUSEL
+  -------------------------------------------------- */
+
+  /* Carousel base class */
+  .carousel {
+    height: 200px;
+  }
+
+  /* Declare heights because of positioning of img element */
+  .carousel .item {
+    height: 200px;
+  }
+
+  .carousel-inner > .item > img {
+    height: 200px;
+  }
+
+  .carousel-caption {
+    top: 20%;
+    left: 17%;
+  }
+
+  .carousel h1 {
+    font-size: 1.6em;
+  }
+
+  .carousel p {
+    font-size: 0.65em;
+  }
+
+  .carousel-indicators {
+    display: none;
+  }
+
+  .carousel .carousel-control {
+    display: block;
+  }
+
+  .logo-white {
+    width: 60px;
+    height: auto;
+  }
+
+  /* WOOD DIV
+  -------------------------------------------------- */
+
+  .wood {
+    height: 120px;
+  }
+
+  /* FEATURES DIV
+  -------------------------------------------------- */
+
+  .features {
+    background-size: 100% auto;
+    height: 240px;
+  }
+
+  .features h1 {
+    font-size: 1.6em;
+    margin: 0;
+  }
+
+  .features .content {
+    position: absolute;
+    left: 17%;
+    top: 10%;
+    z-index: 10;
+  }
+
+  .features .content .description {
+    width: 100%;
+  }
+
+  .features .content h4 {
+    margin: 0;
+  }
+
+  .features .all-features {
+    top: 73%;
+  }
+
+  /* FOOTER
+  -------------------------------------------------- */
+
+  .footer .email-input {
+    margin-top: 50px;
+  }
+
+  .disclaimer {
+    height: 70px;
+  }
+
+  .disclaimer .legend {
+    padding-top: 5px;
+  }
+
+  .info {
+    height: 200px;
+  }
+
+  .info .items {
+    padding-top: 30px;
+  }
+
+  .info .items h4 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+
+}
+
+@media (min-width: 768px) {
+  .centered-box.violet {
+    height: 40px;
+  }
+
+  .centered-box.violet h3 {
+    margin-top: 11px;
+    margin-left: 18px;
+    font-size: 1.1em;
+  }
+
+  .centered-box.all-features {
+    height: 40px;
+  }
+
+  .centered-box.all-features h3 {
+    margin-top: 9px;
+    margin-left: 18px;
+    font-size: 1.2em;
+  }
+
+  .arrow {
+    width: 30px;
+    height: 11px;
+    margin-right: 11px;
+  }
+
+  .violet .arrow {
+    margin-top: 15px;
+  }
+
+  .all-features .arrow {
+    margin-top: 13px;
+  }
+
+  .arrow.white {
+    background-size: 30px 11px;
+  }
+
+    /* NAVBAR
+  -------------------------------------------------- */
+
+  .navbar .logo img {
+    width: 49px;
+    height: 48px;
+  }
+
+  .navbar .navbar-collapse {
+    padding-left: 49px;
+  }
+
+  .navbar-collapse .navbar-nav {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .navbar-collapse .navbar-nav li {
+    padding-right: 15px;
+  }
+
+  .navbar {
+    min-height: 49px;
+    height: 49px;
+    background: transparent;
+  }
+
+  .navbar-nav a {
+    background: transparent !important;
+    font-size: 1.3em;
+    font-weight: normal;
+  }
+
+  .navbar-inner {
+    background: transparent;
+  }
+
+  .navbar li.right-corner {
+    padding-left: 5px;
+    margin-top: 0px;
+  }
+
+  .navbar .login-icon {
+    width: 18px;
+    height: 19px;
+    margin-left: 5px;
+    background-position-y: -3px;
+    background-size: 18px 19px;
+  }
+
+  .navbar .register-icon {
+    width: 20px;
+    height: 18px;
+    margin-left: 5px;
+    background-position-y: 0px;
+    background-size: 20px 15px;
+  }
+
+    /* CAROUSEL
+  -------------------------------------------------- */
+
+  /* Carousel base class */
+  .carousel {
+    height: 400px;
+  }
+
+  /* Declare heights because of positioning of img element */
+  .carousel .item {
+    height: 400px;
+  }
+
+  .carousel-inner > .item > img {
+    height: 400px;
+  }
+
+  .carousel-caption {
+    left: 17%;
+  }
+
+  .carousel h1 {
+    font-size: 4em;
+  }
+
+  .carousel-caption p {
+    margin-bottom: 0px;
+    font-size: 0.9em;
+    font-weight: bold;
+    line-height: 1.4;
+  }
+
+  .carousel-caption .description {
+    width: 60%;
+    margin-top: 7px;
+  }
+
+  .carousel-indicators {
+    left: 85%;
+    width: 110px;
+    margin-left: 0;
+  }
+
+  .carousel-indicators li {
+    margin-left: 20px !important;
+    background-color: #fff;
+    border: none;
+    width: 8px;
+    height: 8px;
+  }
+
+  .carousel-indicators li.active {
+    width: 8px;
+    height: 8px;
+  }
+
+  .logo-white {
+    width: 80px;
+    height: auto;
+  }
+
+  /* WOOD DIV
+  -------------------------------------------------- */
+
+  .wood {
+    height: 300px;
+  }
+
+  /* FEATURES DIV
+  -------------------------------------------------- */
+
+  .features {
+    background-size: 100% auto;
+    height: 420px;
+  }
+
+  .features h1 {
+    font-size: 5em;
+    margin: 0;
+  }
+
+  .features .content {
+    position: absolute;
+    left: 17%;
+    top: 10%;
+    z-index: 10;
+  }
+
+  .features .content .description {
+    width: 100%;
+  }
+
+  .features .content h4 {
+    margin: 0;
+  }
+
+  .features .all-features {
+    top: 73%;
+  }
+
+  /* FOOTER
+  -------------------------------------------------- */
+
+  .footer .email-input {
+    margin-top: 50px;
+  }
+
+  .disclaimer {
+    height: 70px;
+  }
+
+  .disclaimer .legend {
+    padding-top: 5px;
+  }
+
+  .info {
+    height: 200px;
+  }
+
+  .info .items {
+    padding-top: 30px;
+  }
+
+  .info .items h4 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+
+}
+
+@media (min-width: 992px) {
+  .centered-box.violet {
+    height: 48px;
+  }
+
+  .centered-box.violet h3 {
+    margin-top: 15px;
+    margin-left: 21px;
+    font-size: 1.2em;
+  }
+
+  .centered-box.all-features {
+    height: 48px;
+  }
+
+  .centered-box.all-features h3 {
+    margin-top: 11px;
+    margin-left: 21px;
+    font-size: 1.4em;
+  }
+
+  .arrow {
+    width: 33px;
+    height: 14px;
+    margin-right: 13px;
+  }
+
+  .violet .arrow {
+    margin-top: 17px;
+  }
+
+  .all-features .arrow {
+    margin-top: 15px;
+  }
+
+
+  .arrow.white {
+    background-size: 33px 14px;
+  }
+
+    /* NAVBAR
+  -------------------------------------------------- */
+
+  .navbar .logo img {
+    width: 76px;
+    height: 74px;
+  }
+
+  .navbar .navbar-collapse {
+    padding-left: 76px;
+  }
+
+  .navbar-collapse .navbar-nav {
+    padding-top: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .navbar-collapse .navbar-nav li {
+    padding-right: 32px;
+  }
+
+  .navbar {
+    min-height: 74px;
+    height: 74px;
+  }
+
+  .navbar-nav a {
+    background: transparent !important;
+    font-size: 1.3em;
+    font-weight: bold;
+  }
+
+  .navbar li.right-corner {
+    padding-left: 5px;
+    margin-top: 0px;
+  }
+
+  .navbar .login-icon {
+    width: 20px;
+    height: 21px;
+    margin-left: 5px;
+    background-position-y: -3px;
+    background-size: 20px 21px;
+  }
+
+  .navbar .register-icon {
+    width: 22px;
+    height: 20px;
+    margin-left: 5px;
+    background-position-y: 0px;
+    background-size: 22px 17px;
+  }
+
+    /* CAROUSEL
+  -------------------------------------------------- */
+
+  /* Carousel base class */
+  .carousel {
+    height: 440px;
+  }
+
+  /* Declare heights because of positioning of img element */
+  .carousel .item {
+    height: 440px;
+  }
+
+  .carousel-inner > .item > img {
+    height: 440px;
+  }
+
+  .carousel h1 {
+    font-size: 5em;
+  }
+
+  .carousel-caption p {
+    margin-bottom: 0px;
+    font-size: 0.9em;
+    font-weight: bold;
+    line-height: 1.4;
+  }
+
+  .carousel-caption .description {
+    width: 60%;
+    margin-top: 10px;
+  }
+
+  .carousel-indicators {
+    left: 85%;
+    width: 140px;
+    margin-left: 0;
+  }
+
+  .carousel-indicators li {
+    margin-left: 24px !important;
+    width: 9px;
+    height: 9px;
+  }
+
+  .carousel-indicators li.active {
+    width: 9px;
+    height: 9px;
+  }
+
+  .logo-white {
+    width: 100px;
+    height: auto;
+  }
+
+  /* WOOD DIV
+  -------------------------------------------------- */
+
+  .wood {
+    height: 320px;
+  }
+
+  /* FEATURES DIV
+  -------------------------------------------------- */
+
+  .features {
+    height: 480px;
+  }
+
+  .features h1 {
+    font-size: 6em;
+    margin: 0;
+  }
+
+  .features .content .description {
+    width: 40%;
+  }
+
+  .features .all-features {
+    top: 73%;
+  }
+
+  /* FOOTER
+  -------------------------------------------------- */
+
+  .footer .email-input {
+    margin-top: 66px;
+  }
+
+  .disclaimer {
+    height: 90px;
+  }
+
+  .disclaimer .legend {
+    padding-top: 5px;
+  }
+
+  .info {
+    height: 240px;
+  }
+
+  .info .items {
+    padding-top: 40px;
+  }
+
+  .info .items h4 {
+    font-size: 1.3em;
+    margin-bottom: 7px;
+    margin-top: 7px;
+  }
+
+}
+
+@media (min-width: 1200px) {
+  .centered-box.violet {
+    height: 68px;
+  }
+
+  .centered-box.violet h3 {
+    margin-top: 24px;
+    margin-left: 35px;
+    font-size: 1.3em;
+  }
+
+  .centered-box.all-features {
+    height: 68px;
+  }
+
+  .centered-box.all-features h3 {
+    margin-top: 21px;
+    margin-left: 35px;
+    font-size: 1.4em;
+  }
+
+  .arrow {
+    width: 42px;
+    height: 13px;
+    margin-right: 15px;
+  }
+
+  .violet .arrow {
+    margin-top: 27px;
+  }
+
+  .all-features .arrow {
+    margin-top: 25px;
+  }
+
+  .arrow.white {
+    background-size: 42px 13px;
+  }
+
+    /* NAVBAR
+  -------------------------------------------------- */
+
+  .navbar .logo img {
+    width: 76px;
+    height: 74px;
+  }
+
+  .navbar .navbar-collapse {
+    padding-left: 78px;
+  }
+
+  .navbar-collapse .navbar-nav {
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 20px;
+  }
+
+  .navbar-collapse .navbar-nav li {
+    padding-right: 45px;
+  }
+
+  .navbar {
+    min-height: 76px;
+    height: 76px;
+  }
+
+  .navbar-nav a {
+    background: transparent !important;
+    font-size: 1.3em;
+    font-weight: bold;
+  }
+
+  .navbar li.right-corner {
+    padding-left: 5px;
+    margin-top: -1px;
+  }
+
+  .navbar .login-icon {
+    width: 22px;
+    height: 23px;
+    margin-left: 5px;
+    background-position-y: -4px;
+    background-size: 22px 23px;
+  }
+
+  .navbar .register-icon {
+    width: 24px;
+    height: 21px;
+    margin-left: 5px;
+    background-position-y: 0px;
+    background-size: 24px 19px;
+  }
+
+    /* CAROUSEL
+  -------------------------------------------------- */
+
+  /* Carousel base class */
+  .carousel {
+    height: 500px;
+  }
+
+  /* Declare heights because of positioning of img element */
+  .carousel .item {
+    height: 500px;
+  }
+
+  .carousel-inner > .item > img {
+    height: 500px;
+  }
+
+  .carousel h1 {
+    font-size: 6em;
+  }
+
+  .carousel-caption p {
+    margin-bottom: 0px;
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 1.4;
+  }
+
+  .carousel-caption .description {
+    width: 40%;
+    margin-top: 10px;
+  }
+
+  .carousel-indicators {
+    left: 85%;
+    width: 180px;
+    margin-left: 0;
+  }
+
+  .carousel-indicators li {
+    margin-left: 30px !important;
+    width: 10px;
+    height: 10px;
+  }
+
+  .carousel-indicators li.active {
+    width: 10px;
+    height: 10px;
+  }
+
+  .logo-white {
+    width: 120px;
+    height: auto;
+  }
+
+  /* WOOD DIV
+  -------------------------------------------------- */
+
+  .wood {
+    height: 360px;
+  }
+
+  /* FEATURES DIV
+  -------------------------------------------------- */
+
+  .features {
+    height: 600px;
+  }
+
+  .features h1 {
+    font-size: 7em;
+    margin: 0;
+  }
+
+  .features .content .description {
+    width: 40%;
+  }
+
+  .features .all-features {
+    top: 73%;
+  }
+
+  /* FOOTER
+  -------------------------------------------------- */
+
+  .footer .email-input {
+    margin-top: 116px;
+  }
+
+  .disclaimer {
+    height: 150px;
+  }
+
+  .disclaimer .legend {
+    padding-top: 40px;
+  }
+
+  .disclaimer .legend p {
+    margin: 0;
+  }
+
+  .info {
+    height: 250px;
+  }
+
+  .info .items {
+    padding-top: 50px;
+  }
+
+  .info .items h4 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+}

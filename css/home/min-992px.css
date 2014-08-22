@@ -1,0 +1,206 @@
+@media (min-width: 992px) {
+  .centered-box.violet {
+    height: 48px;
+  }
+
+  .centered-box.violet h3 {
+    margin-top: 15px;
+    margin-left: 21px;
+    font-size: 1.2em;
+  }
+
+  .centered-box.all-features {
+    height: 48px;
+  }
+
+  .centered-box.all-features h3 {
+    margin-top: 11px;
+    margin-left: 21px;
+    font-size: 1.4em;
+  }
+
+  .arrow {
+    width: 33px;
+    height: 14px;
+    margin-right: 13px;
+  }
+
+  .violet .arrow {
+    margin-top: 17px;
+  }
+
+  .all-features .arrow {
+    margin-top: 15px;
+  }
+
+
+  .arrow.white {
+    background-size: 33px 14px;
+  }
+
+    /* NAVBAR
+  -------------------------------------------------- */
+
+  .navbar .logo img {
+    width: 76px;
+    height: 74px;
+  }
+
+  .navbar .navbar-collapse {
+    padding-left: 76px;
+  }
+
+  .navbar-collapse .navbar-nav {
+    padding-top: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .navbar-collapse .navbar-nav li {
+    padding-right: 32px;
+  }
+
+  .navbar {
+    min-height: 74px;
+    height: 74px;
+  }
+
+  .navbar-nav a {
+    background: transparent !important;
+    font-size: 1.3em;
+    font-weight: bold;
+  }
+
+  .navbar li.right-corner {
+    padding-left: 5px;
+    margin-top: 0px;
+  }
+
+  .navbar .login-icon {
+    width: 20px;
+    height: 21px;
+    margin-left: 5px;
+    background-position-y: -3px;
+    background-size: 20px 21px;
+  }
+
+  .navbar .register-icon {
+    width: 22px;
+    height: 20px;
+    margin-left: 5px;
+    background-position-y: 0px;
+    background-size: 22px 17px;
+  }
+
+    /* CAROUSEL
+  -------------------------------------------------- */
+
+  /* Carousel base class */
+  .carousel {
+    height: 440px;
+  }
+
+  /* Declare heights because of positioning of img element */
+  .carousel .item {
+    height: 440px;
+  }
+
+  .carousel-inner > .item > img {
+    height: 440px;
+  }
+
+  .carousel h1 {
+    font-size: 5em;
+  }
+
+  .carousel-caption p {
+    margin-bottom: 0px;
+    font-size: 0.9em;
+    font-weight: bold;
+    line-height: 1.4;
+  }
+
+  .carousel-caption .description {
+    width: 60%;
+    margin-top: 10px;
+  }
+
+  .carousel-indicators {
+    left: 85%;
+    width: 140px;
+    margin-left: 0;
+  }
+
+  .carousel-indicators li {
+    margin-left: 24px !important;
+    width: 9px;
+    height: 9px;
+  }
+
+  .carousel-indicators li.active {
+    width: 9px;
+    height: 9px;
+  }
+
+  .logo-white {
+    width: 100px;
+    height: auto;
+  }
+
+  /* WOOD DIV
+  -------------------------------------------------- */
+
+  .wood {
+    height: 320px;
+  }
+
+  /* FEATURES DIV
+  -------------------------------------------------- */
+
+  .features {
+    height: 480px;
+  }
+
+  .features h1 {
+    font-size: 6em;
+    margin: 0;
+  }
+
+  .features .content .description {
+    width: 40%;
+  }
+
+  .features .all-features {
+    top: 73%;
+  }
+
+  /* FOOTER
+  -------------------------------------------------- */
+
+  .footer .email-input {
+    margin-top: 66px;
+  }
+
+  .disclaimer {
+    height: 90px;
+  }
+
+  .disclaimer .legend {
+    padding-top: 5px;
+  }
+
+  .info {
+    height: 240px;
+  }
+
+  .info .items {
+    padding-top: 40px;
+  }
+
+  .info .items h4 {
+    font-size: 1.3em;
+    margin-bottom: 7px;
+    margin-top: 7px;
+  }
+
+}

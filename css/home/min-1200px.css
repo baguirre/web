@@ -1,0 +1,210 @@
+@media (min-width: 1200px) {
+  .centered-box.violet {
+    height: 68px;
+  }
+
+  .centered-box.violet h3 {
+    margin-top: 24px;
+    margin-left: 35px;
+    font-size: 1.3em;
+  }
+
+  .centered-box.all-features {
+    height: 68px;
+  }
+
+  .centered-box.all-features h3 {
+    margin-top: 21px;
+    margin-left: 35px;
+    font-size: 1.4em;
+  }
+
+  .arrow {
+    width: 42px;
+    height: 13px;
+    margin-right: 15px;
+  }
+
+  .violet .arrow {
+    margin-top: 27px;
+  }
+
+  .all-features .arrow {
+    margin-top: 25px;
+  }
+
+  .arrow.white {
+    background-size: 42px 13px;
+  }
+
+    /* NAVBAR
+  -------------------------------------------------- */
+
+  .navbar .logo img {
+    width: 76px;
+    height: 74px;
+  }
+
+  .navbar .navbar-collapse {
+    padding-left: 78px;
+  }
+
+  .navbar-collapse .navbar-nav {
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 20px;
+  }
+
+  .navbar-collapse .navbar-nav li {
+    padding-right: 45px;
+  }
+
+  .navbar {
+    min-height: 76px;
+    height: 76px;
+  }
+
+  .navbar-nav a {
+    background: transparent !important;
+    font-size: 1.3em;
+    font-weight: bold;
+  }
+
+  .navbar li.right-corner {
+    padding-left: 5px;
+    margin-top: -1px;
+  }
+
+  .navbar .login-icon {
+    width: 22px;
+    height: 23px;
+    margin-left: 5px;
+    background-position-y: -4px;
+    background-size: 22px 23px;
+  }
+
+  .navbar .register-icon {
+    width: 24px;
+    height: 21px;
+    margin-left: 5px;
+    background-position-y: 0px;
+    background-size: 24px 19px;
+  }
+
+    /* CAROUSEL
+  -------------------------------------------------- */
+
+  /* Carousel base class */
+  .carousel {
+    height: 500px;
+  }
+
+  /* Declare heights because of positioning of img element */
+  .carousel .item {
+    height: 500px;
+  }
+
+  .carousel-inner > .item > img {
+    height: 500px;
+  }
+
+  .carousel h1 {
+    font-size: 6em;
+  }
+
+  .carousel-caption p {
+    margin-bottom: 0px;
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 1.4;
+  }
+
+  .carousel-caption .description {
+    width: 40%;
+    margin-top: 10px;
+  }
+
+  .carousel-indicators {
+    left: 85%;
+    width: 180px;
+    margin-left: 0;
+  }
+
+  .carousel-indicators li {
+    margin-left: 30px !important;
+    width: 10px;
+    height: 10px;
+  }
+
+  .carousel-indicators li.active {
+    width: 10px;
+    height: 10px;
+  }
+
+  .logo-white {
+    width: 120px;
+    height: auto;
+  }
+
+  /* WOOD DIV
+  -------------------------------------------------- */
+
+  .wood {
+    height: 360px;
+  }
+
+  /* FEATURES DIV
+  -------------------------------------------------- */
+
+  .features {
+    height: 600px;
+  }
+
+  .features h1 {
+    font-size: 7em;
+    margin: 0;
+  }
+
+  .features .content .description {
+    width: 40%;
+  }
+
+  .features .all-features {
+    top: 73%;
+  }
+
+  /* FOOTER
+  -------------------------------------------------- */
+
+  .footer .email-input {
+    margin-top: 116px;
+  }
+
+  .disclaimer {
+    height: 150px;
+  }
+
+  .disclaimer .legend {
+    padding-top: 40px;
+  }
+
+  .disclaimer .legend p {
+    margin: 0;
+  }
+
+  .info {
+    height: 250px;
+  }
+
+  .info .items {
+    padding-top: 50px;
+  }
+
+  .info .items h4 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+}
+
