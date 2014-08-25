@@ -191,6 +191,7 @@
   }
 
   .features .all-features {
+    border: 3px solid;
     top: 73%;
   }
 

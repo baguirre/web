@@ -251,7 +251,7 @@ form.inline {
 .features .all-features {
   z-index: 1;
   background: transparent;
-  border: 3px solid;
+  border: 1px solid;
 }
 
 /* FOOTER

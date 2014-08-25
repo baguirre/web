@@ -251,7 +251,7 @@ form.inline {
 .features .all-features {
   z-index: 1;
   background: transparent;
-  border: 3px solid;
+  border: 1px solid;
 }
 
 /* FOOTER
@@ -280,6 +280,277 @@ form.inline {
 
 .info .items a:not(.disabled):hover {
   color: rgb(255,255,255);
+}
+
+@media (max-width: 768px) {
+  .centered-box.violet {
+    height: 15px;
+  }
+
+  .centered-box.violet h3 {
+    margin-top: 2px;
+    margin-left: 5px;
+    font-size: 0.65em;
+  }
+
+  .centered-box.all-features {
+    height: 20px;
+  }
+
+  .centered-box.all-features h3 {
+    margin-top: 5px;
+    margin-left: 10px;
+    font-size: 0.7em;
+  }
+
+  .arrow {
+    width: 15px;
+    height: 6px;
+    margin-right: 5px;
+  }
+
+  .violet .arrow {
+    margin-top: 5px;
+  }
+
+  .all-features .arrow {
+    margin-top: 5px;
+  }
+
+  .arrow.white {
+    background-size: 15px 6px;
+  }
+
+  h6 {
+    margin: 0;
+    font-size: 0.7em;
+  }
+
+  h5 {
+    margin: 0;
+    font-size: 0.75em;
+  }
+
+    /* NAVBAR
+  -------------------------------------------------- */
+
+  .navbar .logo img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .navbar .navbar-toggle {
+    display: block;
+    background-color: rgba(255,255,255,.3);
+    width: 26px;
+    height: 25px;
+    margin-top: 4px;
+  }
+
+  .navbar .navbar-toggle:hover {
+    background-color: rgba(255,255,255,.5);
+  }
+
+  .navbar .navbar-toggle .register-icon {
+    width: 20px;
+    height: 18px;
+    margin-left: -7px;
+    margin-top: -14px;
+    background-position-y: 0px;
+    background-size: 20px 15px;
+  }
+
+  .navbar .navbar-collapse {
+    padding-top: 32px;
+    width: 150px;
+    background-color: rgba(97,19,151,.8);
+    border: none;
+  }
+
+  .navbar-collapse .navbar-nav {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .navbar-header {
+    height: 0px;
+  }
+
+  .navbar-nav a {
+    font-size: 0.7em;
+    font-weight: normal;
+  }
+
+  .navbar .login-icon {
+    width: 18px;
+    height: 19px;
+    margin-left: 5px;
+    background-position-y: -3px;
+    background-size: 18px 19px;
+  }
+
+  .navbar li.right-corner {
+    float: none !important;
+    padding-left: 0;
+  }
+
+  .navbar li.right-corner .violet-text {
+    color: #fff !important;
+  }
+
+  .navbar-nav li:hover {
+    background: inherit;
+  }
+
+  .navbar-nav li a:hover {
+    background: inherit;
+    color: white;
+  }
+
+    /* CAROUSEL
+  -------------------------------------------------- */
+
+  /* Carousel base class */
+  .carousel {
+    height: 180px;
+  }
+
+  /* Declare heights because of positioning of img element */
+  .carousel .item {
+    height: 180px;
+  }
+
+  .carousel-inner > .item > img {
+    height: 180px;
+  }
+
+  .carousel-caption {
+    top: 12%;
+    left: 17%;
+  }
+
+  .carousel h1 {
+    font-size: 1.6em;
+  }
+
+  .carousel p {
+    font-size: 0.65em;
+  }
+
+  .carousel-indicators {
+    /*display: none;*/
+  }
+
+  .carousel-indicators {
+    left: 80%;
+    width: 60px;
+    margin-left: 0;
+    bottom: 5px;
+  }
+
+  .carousel-indicators li {
+    margin-left: 10px !important;
+    background-color: #fff;
+    border: none;
+    width: 5px;
+    height: 5px;
+  }
+
+  .carousel-indicators li.active {
+    width: 6px;
+    height: 6px;
+  }
+
+  .logo-white {
+    width: 60px;
+    height: auto;
+  }
+
+  /* WOOD DIV
+  -------------------------------------------------- */
+
+  .wood {
+    height: 60px;
+  }
+
+  /* FEATURES DIV
+  -------------------------------------------------- */
+
+  .features {
+    background-size: 100% auto;
+    height: 160px;
+  }
+
+  .features h1 {
+    font-size: 1.3em;
+    margin: 0;
+  }
+
+  .features h5 {
+    font-size: 0.65em;
+    margin: 0;
+    margin-top: 3px;
+  }
+
+  .features .content {
+    position: absolute;
+    left: 17%;
+    top: 10%;
+    z-index: 10;
+  }
+
+  .features .content .description {
+    width: 100%;
+  }
+
+  .features .content h4 {
+    margin: 0;
+  }
+
+  .features .all-features {
+    top: 73%;
+  }
+
+  /* FOOTER
+  -------------------------------------------------- */
+
+  .footer .email-input {
+    margin-top: 33px;
+  }
+
+  .disclaimer {
+    height: 40px;
+  }
+
+  .disclaimer .legend {
+    padding-top: 5px;
+  }
+
+  .info {
+    height: 120px;
+  }
+
+  .info .items {
+    padding-top: 10px;
+  }
+
+  .info .items h4 {
+    margin-bottom: 2px;
+    margin-top: 2px;
+  }
+
+  .info .items h4 a {
+    font-size: 0.5em;
+  }
+
+  .info .items .col-xs-4 {
+    padding: 0;
+  }
+
+  .info .items .row {
+    margin: 0;
+  }
+
 }
 
 @media (min-width: 768px) {
@@ -495,6 +766,7 @@ form.inline {
   }
 
   .features .all-features {
+    border: 2px solid;
     top: 73%;
   }
 
@@ -533,216 +805,6 @@ form.inline {
 
   .info .signature {
     margin-top: 15px;
-  }
-
-}
-
-@media (max-width: 768px) {
-  .centered-box.violet {
-    height: 20px;
-  }
-
-  .centered-box.violet h3 {
-    margin-top: 5px;
-    margin-left: 10px;
-    font-size: 1.1em;
-  }
-
-  .centered-box.all-features {
-    height: 20px;
-  }
-
-  .centered-box.all-features h3 {
-    margin-top: 5px;
-    margin-left: 10px;
-    font-size: 1.2em;
-  }
-
-  .arrow {
-    width: 15px;
-    height: 6px;
-    margin-right: 7px;
-  }
-
-  .violet .arrow {
-    margin-top: 7px;
-  }
-
-  .all-features .arrow {
-    margin-top: 7px;
-  }
-
-  .arrow.white {
-    background-size: 15px 6px;
-  }
-
-    /* NAVBAR
-  -------------------------------------------------- */
-
-  .navbar .logo img {
-    width: 46px;
-    height: 45px;
-  }
-
-  .navbar .navbar-collapse {
-    padding-left: 46px;
-  }
-
-  .navbar-collapse .navbar-nav {
-    padding-left: 8px;
-    padding-right: 8px;
-  }
-
-  .navbar-collapse .navbar-nav li {
-    padding-right: 12px;
-  }
-
-  .navbar {
-    min-height: 46px;
-    height: 45px;
-    /*background: transparent;*/
-  }
-
-  .navbar-nav a {
-    /*background: transparent !important;*/
-    font-size: 1.3em;
-    font-weight: normal;
-  }
-
-  .navbar-inner {
-    /*background: transparent;*/
-  }
-
-  .navbar li.right-corner {
-    padding-left: 5px;
-    margin-top: 0px;
-  }
-
-  .navbar .login-icon {
-    width: 18px;
-    height: 19px;
-    margin-left: 5px;
-    background-position-y: -3px;
-    background-size: 18px 19px;
-  }
-
-  .navbar .register-icon {
-    width: 20px;
-    height: 18px;
-    margin-left: 5px;
-    background-position-y: 0px;
-    background-size: 20px 15px;
-  }
-
-    /* CAROUSEL
-  -------------------------------------------------- */
-
-  /* Carousel base class */
-  .carousel {
-    height: 200px;
-  }
-
-  /* Declare heights because of positioning of img element */
-  .carousel .item {
-    height: 200px;
-  }
-
-  .carousel-inner > .item > img {
-    height: 200px;
-  }
-
-  .carousel-caption {
-    top: 20%;
-    left: 17%;
-  }
-
-  .carousel h1 {
-    font-size: 1.6em;
-  }
-
-  .carousel p {
-    font-size: 0.65em;
-  }
-
-  .carousel-indicators {
-    display: none;
-  }
-
-  .carousel .carousel-control {
-    display: block;
-  }
-
-  .logo-white {
-    width: 60px;
-    height: auto;
-  }
-
-  /* WOOD DIV
-  -------------------------------------------------- */
-
-  .wood {
-    height: 120px;
-  }
-
-  /* FEATURES DIV
-  -------------------------------------------------- */
-
-  .features {
-    background-size: 100% auto;
-    height: 240px;
-  }
-
-  .features h1 {
-    font-size: 1.6em;
-    margin: 0;
-  }
-
-  .features .content {
-    position: absolute;
-    left: 17%;
-    top: 10%;
-    z-index: 10;
-  }
-
-  .features .content .description {
-    width: 100%;
-  }
-
-  .features .content h4 {
-    margin: 0;
-  }
-
-  .features .all-features {
-    top: 73%;
-  }
-
-  /* FOOTER
-  -------------------------------------------------- */
-
-  .footer .email-input {
-    margin-top: 50px;
-  }
-
-  .disclaimer {
-    height: 70px;
-  }
-
-  .disclaimer .legend {
-    padding-top: 5px;
-  }
-
-  .info {
-    height: 200px;
-  }
-
-  .info .items {
-    padding-top: 30px;
-  }
-
-  .info .items h4 {
-    font-size: 1.2em;
-    margin-bottom: 5px;
-    margin-top: 5px;
   }
 
 }
@@ -940,6 +1002,7 @@ form.inline {
   }
 
   .features .all-features {
+    border: 3px solid;
     top: 73%;
   }
 
