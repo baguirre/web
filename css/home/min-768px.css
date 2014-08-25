@@ -198,6 +198,7 @@
   .features .content {
     position: absolute;
     left: 17%;
+    right: 17%;
     top: 10%;
     z-index: 10;
   }
