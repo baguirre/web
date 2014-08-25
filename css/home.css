@@ -824,6 +824,7 @@ form.inline {
   .navbar-nav a {
     background: transparent !important;
     font-size: 1.1em;
+    padding: 15px !important;
   }
 
   .navbar li.right-corner {
