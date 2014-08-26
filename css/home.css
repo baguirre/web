@@ -1281,3 +1281,17 @@ form.inline {
   }
 
 }
+
+@media (min-width: 1600px) {
+  .carousel {
+    height: 618px;
+  }
+
+  .carousel .item {
+    height: 618px;
+  }
+
+  .carousel .carousel-caption {
+    top: 30%;
+  }
+}

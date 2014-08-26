@@ -1,0 +1,13 @@
+@media (min-width: 1200px) {
+  .carousel {
+    height: 618px;
+  }
+
+  .carousel .item {
+    height: 618px;
+  }
+
+  .carousel .carousel-caption {
+    top: 30%;
+  }
+}
