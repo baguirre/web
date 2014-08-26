@@ -172,15 +172,22 @@ form.inline {
   background-color: #777;
 }
 
-.carousel-inner > .item > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
+.carousel-inner .item.one {
+  background-image: url('/img/slide-1.jpg');
+}
+
+.carousel-inner .item.two {
+  background-image: url('/img/slide-2.jpg');
+}
+
+.carousel-inner .item.three {
+  background-image: url('/img/slide-3.jpg');
 }
 
 .carousel-inner > .item {
   background-color: rgb(73,147,150);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .carousel .overlay {
@@ -205,7 +212,8 @@ form.inline {
 }
 
 .carousel-indicators li {
-  background-color: #fff;
+  margin: 1px;
+  background-color: #555;
   border: none;
 }
 
@@ -283,7 +291,7 @@ form.inline {
   color: rgb(255,255,255);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .centered-box.violet {
     height: 15px;
   }
@@ -324,7 +332,7 @@ form.inline {
 
   h6 {
     margin: 0;
-    font-size: 0.7em;
+    font-size: 0.6em;
   }
 
   h5 {
@@ -413,25 +421,22 @@ form.inline {
 
   /* Carousel base class */
   .carousel {
-    height: 180px;
+    height: 140px;
   }
 
   /* Declare heights because of positioning of img element */
   .carousel .item {
-    height: 180px;
-  }
-
-  .carousel-inner > .item > img {
-    height: 180px;
+    height: 140px;
   }
 
   .carousel-caption {
-    top: 12%;
-    left: 17%;
+    top: 20%;
+    left: 19%;
+    right: 19%;
   }
 
   .carousel h1 {
-    font-size: 1.6em;
+    font-size: 1.2em;
   }
 
   .carousel p {
@@ -450,6 +455,7 @@ form.inline {
   }
 
   .carousel-indicators li {
+    margin: 1px !important;
     margin-left: 10px !important;
     background-color: #fff;
     border: none;
@@ -463,8 +469,9 @@ form.inline {
   }
 
   .logo-white {
-    width: 60px;
+    width: 50px;
     height: auto;
+    padding-left: 2px;
   }
 
   /* WOOD DIV
@@ -483,7 +490,7 @@ form.inline {
   }
 
   .features h1 {
-    font-size: 1.3em;
+    font-size: 1.2em;
     margin: 0;
   }
 
@@ -667,30 +674,27 @@ form.inline {
 
   /* Carousel base class */
   .carousel {
-    height: 400px;
+    height: 282px;
   }
 
   /* Declare heights because of positioning of img element */
   .carousel .item {
-    height: 400px;
-  }
-
-  .carousel-inner > .item > img {
-    height: 400px;
+    height: 282px;
   }
 
   .carousel-caption {
     left: 17%;
-    margin-bottom: 25px;
+    right: 17%;
+    top: 25%;
   }
 
   .carousel h1 {
-    font-size: 4em;
+    font-size: 3em;
   }
 
   .carousel-caption p {
     margin-bottom: 0px;
-    font-size: 0.9em;
+    font-size: 0.8em;
     font-weight: bold;
     line-height: 1.4;
   }
@@ -700,7 +704,7 @@ form.inline {
   }
 
   .carousel-caption .description {
-    width: 60%;
+    width: 50%;
     margin-top: 7px;
   }
 
@@ -711,8 +715,9 @@ form.inline {
   }
 
   .carousel-indicators li {
+    margin: 1px !important;
     margin-left: 20px !important;
-    background-color: #fff;
+    background-color: #888;
     border: none;
     width: 8px;
     height: 8px;
@@ -730,13 +735,14 @@ form.inline {
 
   .carousel .logo-white {
     margin-top: 5px;
+    margin-left: 2px;
   }
 
   /* WOOD DIV
   -------------------------------------------------- */
 
   .wood {
-    height: 300px;
+    height: 185px;
   }
 
   /* FEATURES DIV
@@ -744,7 +750,7 @@ form.inline {
 
   .features {
     background-size: 100% auto;
-    height: 420px;
+    height: 406px;
   }
 
   .features h1 {
@@ -919,20 +925,16 @@ form.inline {
 
   /* Carousel base class */
   .carousel {
-    height: 440px;
+    height: 364px;
   }
 
   /* Declare heights because of positioning of img element */
   .carousel .item {
-    height: 440px;
-  }
-
-  .carousel-inner > .item > img {
-    height: 440px;
+    height: 364px;
   }
 
   .carousel h1 {
-    font-size: 5em;
+    font-size: 3.5em;
   }
 
   .carousel-caption {
@@ -951,7 +953,7 @@ form.inline {
   }
 
   .carousel-caption .description {
-    width: 60%;
+    width: 45%;
     margin-top: 10px;
   }
 
@@ -962,6 +964,7 @@ form.inline {
   }
 
   .carousel-indicators li {
+    margin: 1px !important;
     margin-left: 24px !important;
     width: 9px;
     height: 9px;
@@ -979,24 +982,25 @@ form.inline {
 
   .carousel .logo-white {
     margin-top: 9px;
+    margin-left: 0px;
   }
 
   /* WOOD DIV
   -------------------------------------------------- */
 
   .wood {
-    height: 320px;
+    height: 240px;
   }
 
   /* FEATURES DIV
   -------------------------------------------------- */
 
   .features {
-    height: 480px;
+    height: 525px;
   }
 
   .features h1 {
-    font-size: 4em;
+    font-size: 3.5em;
     margin: 0;
   }
 
@@ -1153,24 +1157,20 @@ form.inline {
 
   /* Carousel base class */
   .carousel {
-    height: 500px;
+    height: 441px;
   }
 
   /* Declare heights because of positioning of img element */
   .carousel .item {
-    height: 500px;
-  }
-
-  .carousel-inner > .item > img {
-    height: 500px;
+    height: 441px;
   }
 
   .carousel h1 {
-    font-size: 6em;
+    font-size: 4em;
   }
 
   .carousel-caption {
-    margin-bottom: 40px;
+    top: 22%;
   }
 
   .carousel-caption p {
@@ -1196,6 +1196,7 @@ form.inline {
   }
 
   .carousel-indicators li {
+    margin: 1px !important;
     margin-left: 30px !important;
     width: 10px;
     height: 10px;
@@ -1219,18 +1220,18 @@ form.inline {
   -------------------------------------------------- */
 
   .wood {
-    height: 360px;
+    height: 290px;
   }
 
   /* FEATURES DIV
   -------------------------------------------------- */
 
   .features {
-    height: 600px;
+    height: 636px;
   }
 
   .features h1 {
-    font-size: 5em;
+    font-size: 4em;
     margin: 0;
   }
 

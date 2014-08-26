@@ -110,30 +110,27 @@
 
   /* Carousel base class */
   .carousel {
-    height: 400px;
+    height: 282px;
   }
 
   /* Declare heights because of positioning of img element */
   .carousel .item {
-    height: 400px;
-  }
-
-  .carousel-inner > .item > img {
-    height: 400px;
+    height: 282px;
   }
 
   .carousel-caption {
     left: 17%;
-    margin-bottom: 25px;
+    right: 17%;
+    top: 25%;
   }
 
   .carousel h1 {
-    font-size: 4em;
+    font-size: 3em;
   }
 
   .carousel-caption p {
     margin-bottom: 0px;
-    font-size: 0.9em;
+    font-size: 0.8em;
     font-weight: bold;
     line-height: 1.4;
   }
@@ -143,7 +140,7 @@
   }
 
   .carousel-caption .description {
-    width: 60%;
+    width: 50%;
     margin-top: 7px;
   }
 
@@ -154,8 +151,9 @@
   }
 
   .carousel-indicators li {
+    margin: 1px !important;
     margin-left: 20px !important;
-    background-color: #fff;
+    background-color: #888;
     border: none;
     width: 8px;
     height: 8px;
@@ -173,13 +171,14 @@
 
   .carousel .logo-white {
     margin-top: 5px;
+    margin-left: 2px;
   }
 
   /* WOOD DIV
   -------------------------------------------------- */
 
   .wood {
-    height: 300px;
+    height: 185px;
   }
 
   /* FEATURES DIV
@@ -187,7 +186,7 @@
 
   .features {
     background-size: 100% auto;
-    height: 420px;
+    height: 406px;
   }
 
   .features h1 {

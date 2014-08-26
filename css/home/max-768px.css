@@ -1,4 +1,4 @@
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .centered-box.violet {
     height: 15px;
   }
@@ -39,7 +39,7 @@
 
   h6 {
     margin: 0;
-    font-size: 0.7em;
+    font-size: 0.6em;
   }
 
   h5 {
@@ -128,25 +128,22 @@
 
   /* Carousel base class */
   .carousel {
-    height: 180px;
+    height: 140px;
   }
 
   /* Declare heights because of positioning of img element */
   .carousel .item {
-    height: 180px;
-  }
-
-  .carousel-inner > .item > img {
-    height: 180px;
+    height: 140px;
   }
 
   .carousel-caption {
-    top: 12%;
-    left: 17%;
+    top: 20%;
+    left: 19%;
+    right: 19%;
   }
 
   .carousel h1 {
-    font-size: 1.6em;
+    font-size: 1.2em;
   }
 
   .carousel p {
@@ -165,6 +162,7 @@
   }
 
   .carousel-indicators li {
+    margin: 1px !important;
     margin-left: 10px !important;
     background-color: #fff;
     border: none;
@@ -178,8 +176,9 @@
   }
 
   .logo-white {
-    width: 60px;
+    width: 50px;
     height: auto;
+    padding-left: 2px;
   }
 
   /* WOOD DIV
@@ -198,7 +197,7 @@
   }
 
   .features h1 {
-    font-size: 1.3em;
+    font-size: 1.2em;
     margin: 0;
   }
 

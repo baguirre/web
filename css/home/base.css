@@ -172,15 +172,22 @@ form.inline {
   background-color: #777;
 }
 
-.carousel-inner > .item > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
+.carousel-inner .item.one {
+  background-image: url('/img/slide-1.jpg');
+}
+
+.carousel-inner .item.two {
+  background-image: url('/img/slide-2.jpg');
+}
+
+.carousel-inner .item.three {
+  background-image: url('/img/slide-3.jpg');
 }
 
 .carousel-inner > .item {
   background-color: rgb(73,147,150);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .carousel .overlay {
@@ -205,7 +212,8 @@ form.inline {
 }
 
 .carousel-indicators li {
-  background-color: #fff;
+  margin: 1px;
+  background-color: #555;
   border: none;
 }
 
@@ -240,6 +248,7 @@ form.inline {
 .features .content {
   position: absolute;
   left: 17%;
+  right: 17%;
   top: 10%;
   z-index: 1;
 }
