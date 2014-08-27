@@ -121,10 +121,12 @@ module.exports = function(grunt){
 
       'gh-pages': {
         options: {
-          base: 'dist'
+          base: 'dist',
+          branch: 'master',
+          repo: 'git@github.com:ingameio/ingameio.github.io.git'
         },
         src: ['**']
-      }
+      },
 
   });
 
@@ -137,6 +139,7 @@ module.exports = function(grunt){
   grunt.loadNpmTasks('assemble');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-less');
+  grunt.loadNpmTasks('grunt-gh-pages');
 
   grunt.registerTask('html', ['assemble']);
 
