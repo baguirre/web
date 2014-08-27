@@ -32,3 +32,6 @@ config/development2.json
 # linux
 *.swp
 *.swo
+
+# Static web build
+dist
