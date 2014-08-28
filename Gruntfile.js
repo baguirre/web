@@ -119,6 +119,15 @@ module.exports = function(grunt){
         all: ['./dist/*.html']
       },
 
+      copy: {
+        dist: {
+          cwd: 'src/base/',
+          src: '**',
+          dest: 'dist/',
+          expand: true
+        },
+      },
+
       'gh-pages': {
         options: {
           base: 'dist',
@@ -140,6 +149,7 @@ module.exports = function(grunt){
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-gh-pages');
+  grunt.loadNpmTasks('grunt-contrib-copy');
 
   grunt.registerTask('html', ['assemble']);
 
@@ -151,6 +161,6 @@ module.exports = function(grunt){
 
   grunt.registerTask('publish', ['default', 'gh-pages']);
 
-  grunt.registerTask('default', ['js', 'style', 'clean', 'html']);
+  grunt.registerTask('default', ['copy', 'js', 'style', 'clean', 'html']);
 
 };
