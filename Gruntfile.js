@@ -116,7 +116,7 @@ module.exports = function(grunt){
       },
 
       clean: {
-        all: ['./dist/*.html']
+        dist: ['dist', '.grunt']
       },
 
       copy: {
@@ -159,8 +159,8 @@ module.exports = function(grunt){
 
   grunt.registerTask('serve', ['default', 'connect', 'watch']);
 
-  grunt.registerTask('publish', ['default', 'gh-pages']);
+  grunt.registerTask('publish', ['default', 'gh-pages', 'clean']);
 
-  grunt.registerTask('default', ['copy', 'js', 'style', 'clean', 'html']);
+  grunt.registerTask('default', ['copy', 'js', 'style', 'html']);
 
 };
