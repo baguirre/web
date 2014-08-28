@@ -129,12 +129,22 @@ module.exports = function(grunt){
       },
 
       'gh-pages': {
-        options: {
-          base: 'dist',
-          branch: 'master',
-          repo: 'git@github.com:ingameio/ingameio.github.io.git'
+        'local': {
+          options: {
+            base: 'dist',
+            branch: 'master',
+            repo: 'git@github.com:ingameio/ingameio.github.io.git'
+          },
+          src: ['**']
         },
-        src: ['**']
+        'dist': {
+          options: {
+            base: 'dist',
+            branch: 'master',
+            repo: 'https://github.com/ingameio/ingameio.github.io.git'
+          },
+          src: ['**']
+        }
       },
 
   });
@@ -159,7 +169,7 @@ module.exports = function(grunt){
 
   grunt.registerTask('serve', ['default', 'connect', 'watch']);
 
-  grunt.registerTask('publish', ['default', 'gh-pages', 'clean']);
+  grunt.registerTask('publish', ['default', 'gh-pages:dist', 'clean']);
 
   grunt.registerTask('default', ['copy', 'js', 'style', 'html']);
 

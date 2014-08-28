@@ -6,7 +6,4 @@ node_js:
   - 0.10.26
 
 script:
-  - grunt
-
-after_success:
-  - grunt gh-pages
+  - grunt publish
