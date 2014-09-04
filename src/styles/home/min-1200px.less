@@ -101,22 +101,21 @@
     /* CAROUSEL
   -------------------------------------------------- */
 
-  /* Carousel base class */
   .carousel {
-    height: 760px;
+    min-height: 500px;
   }
 
-  /* Declare heights because of positioning of img element */
   .carousel .item {
-    height: 760px;
+    min-height: 500px;
+  }
+
+  .carousel-caption {
+    top: 25%;
+    margin-top: 150px;
   }
 
   .carousel h1 {
     font-size: 5em;
-  }
-
-  .carousel-caption {
-    top: 45%;
   }
 
   .carousel-caption p {
@@ -164,6 +163,7 @@
     margin: 10px 5px;
   }
 
+
   /* FEATURES DIV
   -------------------------------------------------- */
 
@@ -181,14 +181,34 @@
 
   #features {
     height: 300px;
+
+    .container {
+      .feature-icon {
+        width: auto;
+        height: 100px;
+
+        &.badge-star {
+          height: 66px;
+          margin: 17px 5px;
+        }
+      }
+    }
   }
 
   #mobile {
     height: 600px;
 
+    h1 {
+      margin: 2px auto;
+    }
+
     .container {
       padding-top: 50px;
       padding-bottom: 50px;
+
+      .screen-cards {
+        width: 800px;
+      }
     }
   }
 
@@ -197,63 +217,6 @@
 
   .wood {
     height: 290px;
-  }
-
-  /* FEATURES DIV
-  -------------------------------------------------- */
-
-  .features {
-    height: 636px;
-  }
-
-  .features h1 {
-    font-size: 4em;
-    margin: 0;
-  }
-
-  .features .content .description {
-    width: 40%;
-  }
-
-  .features .all-features {
-    top: 73%;
-  }
-
-  /* FOOTER
-  -------------------------------------------------- */
-
-  .footer .email-input {
-    margin-top: 116px;
-  }
-
-  .disclaimer {
-    height: 150px;
-  }
-
-  .disclaimer .legend {
-    padding-top: 40px;
-  }
-
-  .disclaimer .legend p {
-    margin: 0;
-  }
-
-  .info {
-    height: 250px;
-  }
-
-  .info .items {
-    padding-top: 50px;
-  }
-
-  .info .items h4 {
-    font-size: 1.1em;
-    margin-bottom: 10px;
-    margin-top: 10px;
-  }
-
-  .info .signature {
-    margin-top: 21px;
   }
 
 }

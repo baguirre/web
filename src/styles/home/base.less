@@ -177,16 +177,19 @@ form.inline {
   background-color: #777;
 }
 
-.carousel-inner .item.one {
-  background-image: url('/img/Header1_v2.jpg');
-}
+.carousel-inner {
 
-.carousel-inner .item.two {
-  background-image: url('/img/Header2_v2.jpg');
-}
+  .item.one {
+    background-image: url('/img/Header1_v2.jpg');
+  }
 
-.carousel-inner .item.three {
-  background-image: url('/img/Header3_v2.jpg');
+  .item.two {
+    background-image: url('/img/Header2_v2.jpg');
+  }
+
+  .item.three {
+    background-image: url('/img/Header3_v2.jpg');
+  }
 }
 
 .carousel-inner > .item {
@@ -226,6 +229,10 @@ form.inline {
   background-color: @violet;
 }
 
+html, body, .carousel, .item, .active, .carousel-inner {
+  height:100%;
+}
+
 /* WOOD DIV
 -------------------------------------------------- */
 
@@ -260,6 +267,13 @@ form.inline {
 
 #features {
   background-image: url('/img/texture.png');
+
+  .container {
+    h1 {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
 }
 
 #mobile {

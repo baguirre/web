@@ -125,29 +125,35 @@
 
     /* CAROUSEL
   -------------------------------------------------- */
-
-  /* Carousel base class */
   .carousel {
-    height: 140px;
+    min-height: 150px;
+
+    .item {
+      min-height: 150px;
+    }
+
+    .carousel-caption {
+      margin-top: 50px;
+      top: 20%;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2em;
+    }
+
+    p {
+     font-size: 0.65em;
+    }
   }
 
-  /* Declare heights because of positioning of img element */
   .carousel .item {
-    height: 140px;
+    min-height: 150px;
   }
 
   .carousel-caption {
-    top: 20%;
     left: 19%;
     right: 19%;
-  }
-
-  .carousel h1 {
-    font-size: 1.2em;
-  }
-
-  .carousel p {
-    font-size: 0.65em;
   }
 
   .carousel-indicators {
