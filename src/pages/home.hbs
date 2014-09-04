@@ -1,7 +1,9 @@
 ---
 title: Ingame.io
 cssFile: home.css
+jsFile: home.js
 ---
+{{!
 <div class="navbar navbar-static-top" role="navigation">
   <div class="navbar-header">
     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -12,7 +14,7 @@ cssFile: home.css
         <img src="/img/logo.png">
     </a>
   </div>
-  <div class="navbar-collapse collapse">
+  <div class="navbar-collapse collapse hidden">
     <ul class="nav navbar-nav">
       <li class="active"><a href="#">Product</a></li>
       <li><a href="/developers">Developers</a></li>
@@ -24,11 +26,18 @@ cssFile: home.css
     </ul>
   </div>
 </div>
+}}
 
-
+<div class="navbar navbar-static-top" role="navigation">
+  <div class="navbar-header">
+    <a class="logo" rel="home" href="#" title="Ingame.io">
+        <img src="/img/logo.png">
+    </a>
+  </div>
+</div>
 <!-- Carousel
 ================================================== -->
-<div id="home-carousel" class="carousel" data-ride="carousel" data-interval="3000">
+<div id="home-carousel" class="carousel" data-ride="carousel" data-pause="none" data-interval="3000">
 
   <!-- Indicators -->
   <ol class="carousel-indicators">
@@ -40,40 +49,43 @@ cssFile: home.css
     <div class="item one active">
       <div class="container">
         <div class="carousel-caption">
-          <h1><b>Fastest way</b></h1>
-          <h1><b>to reward</b></h1>
+          <h1>Fastest way to reward</h1>
           <img class="logo-white" src="/img/logo-white.png">
-          <div class="description hidden-xs hidden-sm">
+          {{!
+          <div class="description">
             <h6>A solid reward system it's a crucial piece in the engagement puzzle.</h6>
             <h6>It's an exciting tool that motivates people to go further while executing your organization plans.</h6>
-         </div>
+          </div>
+          }}
         </div>
       </div>
     </div>
     <div class="item two">
       <div class="container">
         <div class="carousel-caption">
-          <h1><b>Fastest way</b></h1>
-          <h1><b>to measure</b></h1>
+          <h1>Fastest way to measure</h1>
           <img class="logo-white" src="/img/logo-white.png">
-          <div class="description hidden-xs hidden-sm">
+          {{!
+          <div class="description">
             <h6>Is not about accumulating data and tracking activities.</h6>
             <h6>Measure means to understand your players and in consequence add sustainable value.</h6>
             <h6>The advanced data analytics it's allows you to focus on engineering and substance, not style.</h6>
           </div>
+          }}
         </div>
       </div>
     </div>
     <div class="item three">
       <div class="container">
         <div class="carousel-caption">
-          <h1><b>Fastest way</b></h1>
-          <h1><b>to improve</b></h1>
+          <h1>Fastest way to improve</h1>
           <img class="logo-white" src="/img/logo-white.png">
-          <div class="description hidden-xs hidden-sm">
+          {{!
+          <div class="description">
             <h6>Your most important objective will be to empower your players, not manipulate them.</h6>
             <h6>Creates and design the best and effective experiences to boost your players abilities.</h6>
           </div>
+          }}
         </div>
       </div>
     </div>
@@ -83,19 +95,77 @@ cssFile: home.css
   <a class="right carousel-control" href="#home-carousel" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
 </div>
 
+<div id="video" class="container-fluid">
+  <div class="video-container">
+    <iframe src="//www.youtube.com/embed/yBJQRb3XMdc?showinfo=0&rel=0" frameborder="0" showinfo="0" allowfullscreen></iframe>
+  </div>
+</div>
+
+<div id="features">
+  <div class="container">
+    <div class="col-lg-4">
+      <h1>Reward</h1>
+      <div class="description">
+        <h6>A solid reward system it's a crucial piece in the engagement puzzle.</h6>
+        <h6>It's an exciting tool that motivates people to go further while executing your organization plans.</h6>
+      </div>
+    </div>
+
+    <div class="col-lg-4">
+      <h1>Measure</h1>
+      <div class="description">
+        <h6>Is not about accumulating data and tracking activities.</h6>
+        <h6>Measure means to understand your players and in consequence add sustainable value.</h6>
+        <h6>The advanced data analytics it's allows you to focus on engineering and substance, not style.</h6>
+      </div>
+    </div>
+
+    <div class="col-lg-4">
+      <h1>Improve</h1>
+      <div class="description">
+        <h6>Your most important objective will be to empower your players, not manipulate them.</h6>
+        <h6>Creates and design the best and effective experiences to boost your players abilities.</h6>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<div id="mobile" class="container-fluid">
+  <div class="container">
+    <div class="col-lg-4">
+      <img class="img-responsive" src="img/iphone.png" style="width: 230px; margin-top: 10px;">
+    </div>
+
+    <div class="col-lg-8">
+      <div class="header">
+        <h1>Focus on the mechanics and dynamics design,</h1>
+        <h1>we cover the rest.</h1>
+      </div>
+      <div class="clearfix"></div>
+
+      <div class="description hidden-xs">
+        <h5>The best Gamification experiences are those that balance clever rules with-in a smart design and game settings.</h5>
+        <h5>This flexible, fast, simple and modular tool will allow you improve and scale as your organization grows.</h5>
+      </div>
+    </div>
+  </div>
+
+</div>
 
 <div class="container-fluid wood">
   <div class="centered-box violet email-input">
     <form action="http://ingame.createsend.com/t/t/s/iyjyv/" method="post" class="inline">
       <button href="#" type="submit" class="pull-right white arrow"></button>
       <h3>
-        <input name="cm-iyjyv-iyjyv" type="email" class="transparent" placeholder="Enter your email and start creating rules" spellcheck="false">
+        <input name="cm-iyjyv-iyjyv" type="email" class="transparent" placeholder="Enter your email and subscribe to beta" spellcheck="false">
       </h3>
     </form>
   </div>
-
 </div>
 
+{{!
 <div class="container-fluid features">
   <div class="container">
     <div class="content">
@@ -140,22 +210,22 @@ cssFile: home.css
   <div class="container-fluid info">
     <div class="centered-box items">
       <footer>
-          <div class="row">
-            <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3"><h4><a class="disabled">Jobs</a></h4></div>
-            <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3"><h4><a href="/about-us">About Us</a></h4></div>
-            <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3"><h4><a class="disabled">Blog</a></h4></div>
-            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"><h4><a class="hidden-xs" href="#">Social Networks</a></h4></div>
-          </div>
-          <div class="row">
-            <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3"><h4><a class="disabled">Press</a></h4></div>
-            <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3"><h4><a class="disabled">User Cases</a></h4></div>
-            <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3"><h4><a class="disabled">API</a></h4></div>
-          </div>
-          <div class="row">
-            <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3"><h4><a href="#">Game Templates</a></h4></div>
-            <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3"><h4><a href="/contact">Contact</a></h4></div>
-            <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3"><h4><a href="#">Privacy</a></h4></div>
-          </div>
+        <div class="row">
+          <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3"><h4><a class="disabled">Jobs</a></h4></div>
+          <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3"><h4><a href="/about-us">About Us</a></h4></div>
+          <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3"><h4><a class="disabled">Blog</a></h4></div>
+          <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"><h4><a class="hidden-xs" href="#">Social Networks</a></h4></div>
+        </div>
+        <div class="row">
+          <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3"><h4><a class="disabled">Press</a></h4></div>
+          <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3"><h4><a class="disabled">User Cases</a></h4></div>
+          <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3"><h4><a class="disabled">API</a></h4></div>
+        </div>
+        <div class="row">
+          <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3"><h4><a href="#">Game Templates</a></h4></div>
+          <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3"><h4><a href="/contact">Contact</a></h4></div>
+          <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3"><h4><a href="#">Privacy</a></h4></div>
+        </div>
 
         <span class="signature violet hide"></span>
       </footer>
@@ -163,3 +233,4 @@ cssFile: home.css
 
   </div>
 </div>
+}}

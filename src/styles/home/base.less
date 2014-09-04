@@ -1,6 +1,7 @@
 /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
+@violet: rgb(97,19,151);
 
 body {
   color: #fff;
@@ -63,11 +64,11 @@ button.arrow {
 }
 
 .centered-box.violet {
-  background-color: rgb(97,19,151);
+  background-color: @violet;
 }
 
 .violet-text {
-  color: rgb(97,19,151) !important;
+  color: @violet !important;
 }
 
 input.transparent {
@@ -177,15 +178,15 @@ form.inline {
 }
 
 .carousel-inner .item.one {
-  background-image: url('/img/slide-1.jpg');
+  background-image: url('/img/Header1_v2.jpg');
 }
 
 .carousel-inner .item.two {
-  background-image: url('/img/slide-2.jpg');
+  background-image: url('/img/Header2_v2.jpg');
 }
 
 .carousel-inner .item.three {
-  background-image: url('/img/slide-3.jpg');
+  background-image: url('/img/Header3_v2.jpg');
 }
 
 .carousel-inner > .item {
@@ -222,7 +223,7 @@ form.inline {
 }
 
 .carousel-indicators li.active {
-  background-color: rgb(97,19,151);
+  background-color: @violet;
 }
 
 /* WOOD DIV
@@ -231,7 +232,40 @@ form.inline {
 .wood {
   position: relative;
   background-image: url('/img/wood.jpg');
+  background-repeat: repeat-y;
   background-color: rgb(105,105,105);
+}
+
+#video {
+  background-image: url('/img/texture.png');
+  background-color: @violet;
+
+  .video-container {
+    position: relative;
+    padding-bottom: 50%;
+    height: 0;
+    overflow: hidden;
+    padding-top: 1px;
+    /*padding-top: 30px;*/
+
+    iframe, object, embed {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+#features {
+  background-image: url('/img/texture.png');
+}
+
+#mobile {
+  background-image: url('/img/pattern.png');
+  background-color: @violet;
+
 }
 
 /* FEATURES DIV

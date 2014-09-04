@@ -6,8 +6,12 @@ module.exports = function(grunt){
 
       watch: {
         html: {
-          files: ['./src/pages/**/*'],
+          files: ['./src/pages/**/*', ],
           tasks: ['html']
+        },
+        base: {
+          files: ['./src/base/**/*', ],
+          tasks: ['copy']
         },
         js: {
           files: ['<%= jshint.files %>'],
@@ -33,7 +37,7 @@ module.exports = function(grunt){
         },
         dist: {
           // the files to concatenate
-          src: ['src/**/*.js'],
+          src: ['src/**/*.js', '!src/base/**/*.js'],
           // the location of the resulting JS file
           dest: './dist/js/<%= pkg.name %>.js'
         }
@@ -53,7 +57,7 @@ module.exports = function(grunt){
 
       jshint: {
         // define the files to lint
-        files: ['Gruntfile.js', 'src/**/*.js', 'test/**/*.js'],
+        files: ['Gruntfile.js', 'src/**/*.js', '!src/base/**/*.js'],
         // configure JSHint (documented at http://www.jshint.com/docs/)
         options: {
           // more options here if you want to override JSHint defaults
@@ -125,7 +129,7 @@ module.exports = function(grunt){
           src: '**',
           dest: 'dist/',
           expand: true
-        },
+        }
       },
 
       'gh-pages': {
@@ -150,6 +154,7 @@ module.exports = function(grunt){
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-gh-pages');
   grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-newer');
 
   grunt.registerTask('html', ['assemble']);
 
