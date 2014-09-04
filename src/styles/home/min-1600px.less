@@ -9,16 +9,6 @@
     font-size: 1.5em;
   }
 
-  .centered-box.all-features {
-    height: 82px;
-  }
-
-  .centered-box.all-features h3 {
-    margin-top: 28px;
-    margin-left: 35px;
-    font-size: 1.7em;
-  }
-
   .arrow {
     width: 50px;
     height: 16px;
@@ -27,10 +17,6 @@
 
   .violet .arrow {
     margin-top: 34px;
-  }
-
-  .all-features .arrow {
-    margin-top: 32px;
   }
 
   .arrow.white {
@@ -43,6 +29,11 @@
     line-height: 1.3;
   }
 
+  .logo-white {
+    width: 170px !important;
+    height: auto !important;
+  }
+
     /* NAVBAR
   -------------------------------------------------- */
 
@@ -51,183 +42,103 @@
     height: 90px;
   }
 
-  .navbar .navbar-collapse {
-    padding-left: 92px;
-  }
-
-  .navbar-collapse .navbar-nav {
-    padding-top: 25px;
-    padding-left: 30px;
-    padding-right: 25px;
-  }
-
-  .navbar-collapse .navbar-nav li {
-    padding-right: 45px;
-    padding-left: 15px;
-  }
-
-  .navbar {
-    min-height: 90px;
-    height: 90px;
-  }
-
-  .navbar-nav a {
-    background: transparent !important;
-    font-size: 1.3em;
-  }
-
-  .navbar li.right-corner {
-    padding-left: 5px;
-    padding-right: 8px;
-    margin-top: -1px;
-  }
-
-  .navbar .login-icon {
-    width: 22px;
-    height: 23px;
-    margin-left: 5px;
-    background-position-y: -2px;
-    background-size: 22px 23px;
-  }
-
-  .navbar .register-icon {
-    width: 24px;
-    height: 21px;
-    margin-left: 5px;
-    background-position-y: 0px;
-    background-size: 24px 19px;
-  }
-
     /* CAROUSEL
   -------------------------------------------------- */
 
   .carousel {
     min-height: 500px;
+
+    .item {
+      min-height: 500px;
+    }
+
+    h1 {
+      font-size: 5em;
+    }
+
+    .carousel-caption {
+      top: 30%;
+      margin-top: 150px;
+    }
+
+    .carousel-indicators {
+      left: 85%;
+      width: 180px;
+      margin-left: 0;
+    }
+
+    .carousel-indicators li {
+      margin: 1px !important;
+      margin-left: 30px !important;
+      width: 10px;
+      height: 10px;
+
+      &.active {
+        width: 10px;
+        height: 10px;
+      }
+    }
+
+    .logo-white {
+      margin: 10px 5px;
+    }
   }
 
-  .carousel .item {
-    min-height: 500px;
+
+
+  /* FEATURES DIV
+  -------------------------------------------------- */
+
+  #video {
+
+    .container {
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+
+    .video-container {
+      margin: 0;
+    }
   }
 
-  .carousel .carousel-caption {
-    top: 30%;
+  #features {
+    height: 300px;
+
+    .container {
+      .feature-icon {
+        width: auto;
+        height: 100px;
+
+        &.badge-star {
+          height: 66px;
+          margin: 17px 5px;
+        }
+      }
+    }
   }
 
-  .carousel h1 {
-    font-size: 5em;
-  }
+  #mobile {
+    height: 600px;
 
-  .carousel-caption p {
-    margin-bottom: 0px;
-    font-size: 1.5em;
-    font-weight: bold;
-    line-height: 1.4;
-  }
+    h1 {
+      margin: 2px auto;
+    }
 
-  .carousel-caption h6 {
-    font-size: 1.1em;
-    margin-top: 1px;
-  }
+    .container {
+      padding-top: 50px;
+      padding-bottom: 50px;
 
-  .carousel-caption .description {
-    width: 40%;
-    margin-top: 10px;
-  }
-
-  .carousel-indicators {
-    left: 85%;
-    width: 180px;
-    margin-left: 0;
-  }
-
-  .carousel-indicators li {
-    margin: 1px !important;
-    margin-left: 30px !important;
-    width: 10px;
-    height: 10px;
-  }
-
-  .carousel-indicators li.active {
-    width: 10px;
-    height: 10px;
-  }
-
-  .logo-white {
-    width: 118px !important;
-    height: auto !important;
-  }
-
-  .carousel .logo-white {
-    margin-top: 10px;
+      .screen-cards {
+        width: 800px;
+      }
+    }
   }
 
   /* WOOD DIV
   -------------------------------------------------- */
 
   .wood {
-    height: 405px;
-  }
-
-  /* FEATURES DIV
-  -------------------------------------------------- */
-
-  .features {
-    height: 855px;
-  }
-
-  .features h1 {
-    font-size: 5em;
-    margin: 0;
-  }
-
-  .features h5 {
-    font-size: 1.2em;
-  }
-
-  .features .content .description {
-    width: 40%;
-  }
-
-  .features .all-features {
-    top: 73%;
-  }
-
-  /* FOOTER
-  -------------------------------------------------- */
-
-  .footer .email-input {
-    margin-top: 144px;
-  }
-
-  .disclaimer {
-    height: 186px;
-  }
-
-  .disclaimer .legend {
-    padding-top: 65px;
-  }
-
-  .disclaimer .legend h6 {
-    font-size: 1.1em;
-    margin: 0;
-  }
-
-  .info {
-    height: 316px;
-  }
-
-  .info .items {
-    padding-top: 70px;
-  }
-
-  .info .items h4 {
-    font-size: 1.3em;
-    margin-bottom: 15px;
-    margin-top: 12px;
-  }
-
-  .info .signature {
-    margin-top: 21px;
+    height: 290px;
   }
 
 }

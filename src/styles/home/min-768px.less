@@ -9,16 +9,6 @@
     font-size: 1em;
   }
 
-  .centered-box.all-features {
-    height: 40px;
-  }
-
-  .centered-box.all-features h3 {
-    margin-top: 8px;
-    margin-left: 18px;
-    font-size: 1.2em;
-  }
-
   .arrow {
     width: 30px;
     height: 11px;
@@ -29,10 +19,6 @@
     margin-top: 15px;
   }
 
-  .all-features .arrow {
-    margin-top: 13px;
-  }
-
   .arrow.white {
     background-size: 30px 11px;
   }
@@ -41,6 +27,11 @@
     margin-top: 1px;
     margin-bottom: 1px;
     line-height: 1.1;
+  }
+
+  .logo-white {
+    width: 80px !important;
+    height: auto !important;
   }
 
   ::-webkit-input-placeholder { /* WebKit browsers */
@@ -63,212 +54,109 @@
     width: 49px;
     height: 48px;
   }
-
-  .navbar .navbar-collapse {
-    padding-left: 49px;
-  }
-
-  .navbar-collapse .navbar-nav {
-    padding-top: 5px;
-    padding-left: 20px;
-    padding-right: 10px;
-  }
-
-  .navbar-collapse .navbar-nav li {
-    padding-right: 15px;
-    padding-left: 5px;
-  }
-
-  .navbar {
-    min-height: 49px;
-    height: 49px;
-    background: transparent;
-  }
-
-  .navbar-nav a {
-    background: transparent !important;
-    font-weight: normal;
-    font-size: 1em;
-    padding: 10px !important;
-  }
-
-  .navbar-inner {
-    background: transparent;
-  }
-
-  .navbar li.right-corner {
-    padding-left: 3px;
-    padding-right: 2px;
-    margin-top: 0px;
-  }
-
-  .navbar .login-icon {
-    width: 18px;
-    height: 19px;
-    margin-left: 5px;
-    background-position-y: -3px;
-    background-size: 18px 19px;
-  }
-
-  .navbar .register-icon {
-    width: 20px;
-    height: 18px;
-    margin-left: 5px;
-    background-position-y: 0px;
-    background-size: 20px 15px;
-  }
-
     /* CAROUSEL
   -------------------------------------------------- */
 
   .carousel {
     min-height: 240px;
+
+    .item {
+      min-height: 240px;
+    }
+
+    h1 {
+      font-size: 3em;
+    }
+
+    .carousel-caption {
+      top: 25%;
+      margin-top: 80px;
+    }
+
+    .carousel-caption {
+      left: 25%;
+      right: 20%;
+    }
+
+    .carousel-indicators {
+      left: 85%;
+      width: 110px;
+      margin-left: 0;
+    }
+
+    .carousel-indicators li {
+      margin: 1px !important;
+      margin-left: 20px !important;
+      width: 8px;
+      height: 8px;
+
+      background-color: #888;
+      border: none;
+
+      &.active {
+        width: 8px;
+        height: 8px;
+      }
+    }
+
+    .logo-white {
+      margin-top: 5px;
+      margin-left: 2px;
+    }
   }
 
-  .carousel .item {
-    min-height: 240px;
+    /* FEATURES DIV
+  -------------------------------------------------- */
+
+  #video {
+    .container {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    .video-container {
+      margin: 0;
+    }
   }
 
-  .carousel-caption {
-    top: 25%;
-    margin-top: 80px;
+  #features {
+    height: 400px;
+
+    .container {
+      .feature-icon {
+        width: auto;
+        height: 67px;
+
+        &.badge-star {
+          height: 45px;
+          margin: 15px 5px;
+        }
+      }
+    }
   }
 
-  .carousel-caption {
-    left: 25%;
-    right: 20%;
-  }
+  #mobile {
+    height: 600px;
 
-  .carousel h1 {
-    font-size: 3em;
-  }
+    h1 {
+      margin: 2px auto;
+    }
 
-  .carousel-caption p {
-    margin-bottom: 0px;
-    font-size: 0.8em;
-    font-weight: bold;
-    line-height: 1.4;
-  }
+    .container {
+      padding-top: 50px;
+      padding-bottom: 50px;
 
-  .carousel-caption h6 {
-    margin: 0;
+      .screen-cards {
+        width: 400px;
+      }
+    }
   }
-
-  .carousel-caption .description {
-    width: 50%;
-    margin-top: 7px;
-  }
-
-  .carousel-indicators {
-    left: 85%;
-    width: 110px;
-    margin-left: 0;
-  }
-
-  .carousel-indicators li {
-    margin: 1px !important;
-    margin-left: 20px !important;
-    background-color: #888;
-    border: none;
-    width: 8px;
-    height: 8px;
-  }
-
-  .carousel-indicators li.active {
-    width: 8px;
-    height: 8px;
-  }
-
-  .logo-white {
-    width: 80px !important;
-    height: auto !important;
-  }
-
-  .carousel .logo-white {
-    margin-top: 5px;
-    margin-left: 2px;
-  }
-
-  html,body{height:100%;}
-.carousel,.item,.active{height:100%;}
-.carousel-inner{height:100%;}
 
   /* WOOD DIV
   -------------------------------------------------- */
 
   .wood {
     height: 185px;
-  }
-
-  /* FEATURES DIV
-  -------------------------------------------------- */
-
-  .features {
-    background-size: 100% auto;
-    height: 406px;
-  }
-
-  .features h1 {
-    font-size: 3em;
-    margin: 0;
-  }
-
-  .features .content {
-    position: absolute;
-    left: 17%;
-    right: 17%;
-    top: 10%;
-    z-index: 10;
-  }
-
-  .features .content .description {
-    width: 60%;
-  }
-
-  .features .content h4 {
-    margin: 0;
-  }
-
-  .features .all-features {
-    border: 2px solid;
-    top: 73%;
-  }
-
-  /* FOOTER
-  -------------------------------------------------- */
-
-  .footer .email-input {
-    margin-top: 60px;
-  }
-
-  .disclaimer {
-    height: 80px;
-  }
-
-  .disclaimer .legend {
-    padding-top: 17px;
-  }
-
-  .disclaimer .legend p {
-    margin: 0;
-  }
-
-  .info {
-    height: 200px;
-  }
-
-  .info .items {
-    padding-top: 30px;
-  }
-
-  .info .items h4 {
-    font-size: 1em;
-    margin-bottom: 5px;
-    margin-top: 5px;
-  }
-
-  .info .signature {
-    margin-top: 15px;
   }
 
 }

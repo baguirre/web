@@ -9,16 +9,6 @@
     font-size: 1.3em;
   }
 
-  .centered-box.all-features {
-    height: 68px;
-  }
-
-  .centered-box.all-features h3 {
-    margin-top: 22px;
-    margin-left: 35px;
-    font-size: 1.4em;
-  }
-
   .arrow {
     width: 42px;
     height: 13px;
@@ -27,10 +17,6 @@
 
   .violet .arrow {
     margin-top: 29px;
-  }
-
-  .all-features .arrow {
-    margin-top: 25px;
   }
 
   .arrow.white {
@@ -43,6 +29,11 @@
     line-height: 1.1;
   }
 
+  .logo-white {
+    width: 150px !important;
+    height: auto !important;
+  }
+
     /* NAVBAR
   -------------------------------------------------- */
 
@@ -51,117 +42,48 @@
     height: 76px;
   }
 
-  .navbar .navbar-collapse {
-    padding-left: 78px;
-  }
-
-  .navbar-collapse .navbar-nav {
-    padding-top: 14px;
-    padding-left: 30px;
-    padding-right: 20px;
-  }
-
-  .navbar-collapse .navbar-nav li {
-    padding-right: 45px;
-    padding-left: 15px;
-  }
-
-  .navbar {
-    min-height: 76px;
-    height: 76px;
-  }
-
-  .navbar-nav a {
-    background: transparent !important;
-    font-size: 1.2em;
-  }
-
-  .navbar li.right-corner {
-    padding-left: 5px;
-    padding-right: 8px;
-    margin-top: -1px;
-  }
-
-  .navbar .login-icon {
-    width: 22px;
-    height: 23px;
-    margin-left: 5px;
-    background-position-y: -2px;
-    background-size: 22px 23px;
-  }
-
-  .navbar .register-icon {
-    width: 24px;
-    height: 21px;
-    margin-left: 5px;
-    background-position-y: 0px;
-    background-size: 24px 19px;
-  }
-
     /* CAROUSEL
   -------------------------------------------------- */
 
   .carousel {
     min-height: 500px;
+
+    .item {
+      min-height: 500px;
+    }
+
+    h1 {
+      font-size: 5em;
+    }
+
+    .carousel-caption {
+      top: 25%;
+      margin-top: 150px;
+    }
+
+    .carousel-indicators {
+      left: 85%;
+      width: 180px;
+      margin-left: 0;
+    }
+
+    .carousel-indicators li {
+      margin: 1px !important;
+      margin-left: 30px !important;
+      width: 10px;
+      height: 10px;
+
+      &.active {
+        width: 10px;
+        height: 10px;
+      }
+    }
+
+    .logo-white {
+      margin: 10px 5px;
+    }
   }
 
-  .carousel .item {
-    min-height: 500px;
-  }
-
-  .carousel-caption {
-    top: 25%;
-    margin-top: 150px;
-  }
-
-  .carousel h1 {
-    font-size: 5em;
-  }
-
-  .carousel-caption p {
-    margin-bottom: 0px;
-    font-size: 1em;
-    font-weight: bold;
-    line-height: 1.4;
-  }
-
-  .carousel-caption h6 {
-    margin-top: 1px;
-    font-size: 1.3em;
-    line-height: 1.4;
-  }
-
-  .carousel-caption .description {
-    width: 70%;
-    margin-top: 10px;
-  }
-
-  .carousel-indicators {
-    left: 85%;
-    width: 180px;
-    margin-left: 0;
-  }
-
-  .carousel-indicators li {
-    margin: 1px !important;
-    margin-left: 30px !important;
-    width: 10px;
-    height: 10px;
-  }
-
-  .carousel-indicators li.active {
-    width: 10px;
-    height: 10px;
-  }
-
-  .logo-white {
-    width: 150px !important;
-    height: auto !important;
-  }
-
-  .carousel .logo-white {
-    margin: 10px 5px;
-  }
 
 
   /* FEATURES DIV
@@ -218,6 +140,4 @@
   .wood {
     height: 290px;
   }
-
 }
-
