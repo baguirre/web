@@ -5,6 +5,10 @@ module.exports = function(grunt){
     pkg: grunt.file.readJSON('package.json'),
 
       watch: {
+        options: {
+          //nospawn: true
+          livereload: true
+        },
         html: {
           files: ['./src/pages/**/*', ],
           tasks: ['html']
@@ -23,10 +27,6 @@ module.exports = function(grunt){
         },
         css: {
           files: ['./dist/css/*.css']
-        },
-        livereload: {
-          files: ['./**/*'],
-          options: { livereload: true }
         }
       },
 

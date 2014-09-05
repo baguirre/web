@@ -1,23 +1,24 @@
 // Can also be used with $(document).ready()
 $(document).ready(function(){
 
-    "use strict";
+  $('[data-target="#video"]').on('click', function (evt) {
+    evt.preventDefault();
+    var $target = $(evt.currentTarget),
+    videoSrc = $target.data('video'),
+    $modal = $("#video");
 
-    $('.flexslider').flexslider({
-        animation: "fade",
-        controlNav: false,
-        directionNav: false,
-        slideshowSpeed: 4000,
-        animationSpeed: 800,
-        start: function(slider){
-            $('body').removeClass('loading');
-        }
-    });
+$modal.modal('show');
+    console.log($modal
+     .find('iframe'));
+   $modal
+     .find('iframe').attr('src', videoSrc)
+     .end()
+     .on('hide.bs.modal', function () {
+         $(this)
+             .off('hide.bs.modal')
+             .find('iframe').attr('src', '');
+     })
+     .modal('show');
+  });
 
-
-    $("#slides").superslides({
-        play: 6000,
-        animation: "fade",
-        pagination: true
-    });
 });
