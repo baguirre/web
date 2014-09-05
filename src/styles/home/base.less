@@ -290,6 +290,34 @@ form.inline {
   background-color: @violet;
 }
 
+// Fade transition for carousel items
+.transition(@transition) {
+  -webkit-transition: @transition;
+       -o-transition: @transition;
+          transition: @transition;
+}
+
+.carousel {
+  .item {
+    left: 0 !important;
+    .transition(opacity 1.75s); //adjust timing here
+  }
+  .carousel-control {
+    background-image: none; // remove background gradients on controls
+  }
+  // Fade controls with items
+  .next.left,
+  .prev.right {
+    opacity: 1;
+    z-index: 1;
+  }
+  .active.left,
+  .active.right {
+    opacity: 0;
+    z-index: 2;
+  }
+}
+
 html, body, .carousel, .item, .active, .carousel-inner {
   height:100%;
 }
@@ -300,7 +328,7 @@ html, body, .carousel, .item, .active, .carousel-inner {
 .wood {
   position: relative;
   background-image: url('/img/wood.jpg');
-  background-repeat: repeat-y;
+  background-repeat: repeat;
   background-color: rgb(105,105,105);
   height: 180px;
 }
@@ -343,8 +371,7 @@ html, body, .carousel, .item, .active, .carousel-inner {
 }
 
 #mobile {
-  height: 100%;
-  min-height: 500px;
+  height: 500px;
   background-image: url('/img/pattern.png');
   background-color: @violet;
 
