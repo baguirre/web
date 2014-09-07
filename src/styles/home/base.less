@@ -2,6 +2,8 @@
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
 @violet: rgb(97,19,151);
+@violet-dark: rgb(70,35,123);
+@dark: rgb(22, 22, 22);
 
 body {
   color: #fff;
@@ -16,9 +18,15 @@ body h1, h2, h3 {
   text-shadow: none;
 }
 
+h1 {
+  font-weight: 700;
+  line-height: 0.9;
+}
+
+
 p {
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .container-fluid {
@@ -97,6 +105,7 @@ button.arrow {
 .logo-white {
   width: 150px !important;
   height: auto !important;
+  margin-bottom: 10px;
 }
 
 .violet-text {
@@ -167,10 +176,6 @@ form.inline {
     h1 {
       font-size: 5em;
     }
-
-    .logo-white {
-      margin: 10px 5px 0;
-    }
   }
 
 /* NAVBAR
@@ -222,7 +227,7 @@ form.inline {
 
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
-  top: 40%;
+  top: 30%;
   right: 0;
   z-index: 10;
 }
@@ -326,11 +331,9 @@ html, body, .carousel, .item, .active, .carousel-inner {
 -------------------------------------------------- */
 
 .wood {
-  position: relative;
-  background-image: url('/img/wood.jpg');
+  background-image: url('/img/wood.png');
   background-repeat: repeat;
   background-color: rgb(105,105,105);
-  height: 180px;
 }
 
 #video {
@@ -338,7 +341,6 @@ html, body, .carousel, .item, .active, .carousel-inner {
 }
 
 #features {
-  background-image: url('/img/texture.png');
 
   .container {
     padding-top: 75px;
@@ -353,34 +355,47 @@ html, body, .carousel, .item, .active, .carousel-inner {
       vertical-align: middle;
     }
 
-    .feature-icon {
-      width: auto;
-      height: 100px;
-
-      &.badge-star {
-        height: 66px;
-        margin: 17px 10px;
-      }
-
-      &.marker {
-        height: 80px;
-        margin: 10px 0;
-      }
+    .border-left {
+      border-left: 1px solid #999;
     }
   }
 }
 
 #mobile {
-  height: 540px;
-  background-image: url('/img/pattern.png');
-  background-color: @violet;
+  position: relative;
+
+  height: 100%;
+  background-image: url('/img/dark-bkg.jpg');
+  background-repeat: repeat;
+  background-color: @violet-dark;
+
+  .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 60%;
+    background-image: url('/img/screens.png');
+    background-position: right center;
+    background-size: cover;
+  }
 
   h1 {
-    margin-bottom: 25px;
+    margin-bottom: 50px;
   }
 
   .container {
     padding-top: 50px;
     padding-bottom: 50px;
+  }
+}
+
+#footer {
+  position: relative;
+  background-color: @dark;
+  height: 100px;
+
+  .centered-box {
+    top: -100px;
   }
 }
