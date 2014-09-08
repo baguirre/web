@@ -39,7 +39,8 @@ Run default task and commit&push the changes to our GitHub page repository (http
 
 ## CSS Tips
 #### Basic Tips
-- Use `<br/>` inside header tags to avoid margin and padding issues.
+##### Breaks
+Use `<br/>` inside header tags to avoid margin and padding issues.
 
 ```html
 <!-- NOT OK -->
@@ -51,12 +52,14 @@ Run default task and commit&push the changes to our GitHub page repository (http
     World</h1>
 ```
 
-#### Responsive Tips (for Bootstrap)
-- Do not change (so much) the font size, logos and images size. Instead, reorder elements depending on resolution using `col-xs`, `col-sm`, `col-md` and `col-lg` css classes.
+#### Responsive Tips
+##### Grid (for Bootstrap)
+Do not change (so much) the font size, logos and images size. Instead, reorder elements depending on resolution using `col-xs`, `col-sm`, `col-md` and `col-lg` css classes.
 This approach implies less .css (it's more simple) and will look better!
 See bootstrap reference (http://getbootstrap.com/css/#grid-options)
 
-- For "stripe style" (fixed to window height), set <body> and <html> height to 100% height:
+##### Stripe
+For "stripe style" (fixed to window height), set <body> and <html> height to 100% height:
 
 ```css
 body, html {
