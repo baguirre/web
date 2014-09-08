@@ -8,8 +8,6 @@ $(document).ready(function(){
     $modal = $("#video");
 
 $modal.modal('show');
-    console.log($modal
-     .find('iframe'));
    $modal
      .find('iframe').attr('src', videoSrc)
      .end()

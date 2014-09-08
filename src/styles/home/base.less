@@ -304,9 +304,25 @@ form.inline {
 
 .carousel {
   .item {
-    .transition(2s ease-in-out left);
+    left: 0 !important;
+    .transition(opacity 1.75s); //adjust timing here
+  }
+  .carousel-control {
+    background-image: none; // remove background gradients on controls
+  }
+  // Fade controls with items
+  .next.left,
+  .prev.right {
+    opacity: 1;
+    z-index: 1;
+  }
+  .active.left,
+  .active.right {
+    opacity: 0;
+    z-index: 2;
   }
 }
+
 
 html, body, .carousel, .item, .active, .carousel-inner {
   height:100%;
