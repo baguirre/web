@@ -21,4 +21,12 @@ $modal.modal('show');
      .modal('show');
   });
 
+$('button.arrow').click(function(e) {
+    if ($('input[type=email]').val() == '') {
+        e.preventDefault();
+        $('input[type=email]').focus();
+        return false;
+    }
+})
+
 });
