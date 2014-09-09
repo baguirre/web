@@ -90,6 +90,10 @@ module.exports = function(grunt){
         home: {
           src: './src/pages/home.hbs',
           dest: './dist/index.html'
+        },
+        thanks: {
+          src: './src/pages/thanks.hbs',
+          dest: './dist/thanks/index.html'
         }
       },
 
