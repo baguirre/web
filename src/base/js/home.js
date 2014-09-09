@@ -20,9 +20,10 @@ $modal.modal('show');
   });
 
 $('button.arrow').click(function(e) {
-    if ($('input[type=email]').val() == '') {
+    var form = $(this).parent('form');
+    if ($('input[type=email]', form).val() == '') {
         e.preventDefault();
-        $('input[type=email]').focus();
+        $('input[type=email]', form).focus();
         return false;
     }
 })
